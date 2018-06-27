@@ -2,37 +2,176 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/nav.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="css/nav.css"/>
     <link rel="stylesheet" type="text/css" href="css/mainstyle.css"/>
-    <script type="text/javascript" src="java/nav.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="css/vertnav.css"/>
+    <link rel="stylesheet" type="text/css" href="css/vertnavmin.css"/>
+    <link rel="stylesheet" type="text/css" href="css/demo.css"/>-->
+    <link rel="stylesheet" type="text/css" href="css/global.css"/>
+    <script type="text/javascript" src="java/vertnav.js"></script>
+    <script type="text/javascript" src="java/vertmenu.js"></script>
     <title>Birdie Mob</title>
 </head>
-<body>
-<div class="sidenav" id="mySidenav">
+<body class="sidebar-text-alignment-left sidebar-position-left sidebar-fixed mobile-site-title-style-auto
+blog-sidebar-right gallery-style-fit enable-gallery-thumbnails initial-gallery-view-thumbnails
+homepage-gallery-view-inherit thumbnail-aspect-ratio-auto gallery-controls-simple social-icon-style-normal
+hide-social-icons show-category-navigation event-show-past-events event-thumbnails event-thumbnail-size-32-standard
+event-date-label event-list-show-cats event-list-date event-list-time event-list-address event-icalgcal-links
+event-excerpts event-item-back-link product-list-titles-under product-list-alignment-center
+product-item-size-23-standard-vertical product-image-auto-crop product-gallery-size-11-square product-gallery-auto-crop
+show-product-price show-product-item-nav product-social-sharing newsletter-style-dark hide-opentable-icons
+opentable-style-dark small-button-style-solid small-button-shape-square medium-button-style-solid
+medium-button-shape-square large-button-style-solid large-button-shape-square image-block-poster-text-alignment-center
+image-block-card-dynamic-font-sizing image-block-card-content-position-center image-block-card-text-alignment-left
+image-block-overlap-dynamic-font-sizing image-block-overlap-content-position-center
+image-block-overlap-text-alignment-left image-block-collage-dynamic-font-sizing
+image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing
+image-block-stack-text-alignment-left button-style-solid button-corner-style-square
+tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom
+tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows
+tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light
+native-currency-code-usd collection-59bbb1c280bd5e15610c8240 collection-type-gallery collection-layout-default
+homepage view-list mobile-style-available thumbnail-view">
+<div id="canvasWrapper">
+    <div id="canvas">
+        <div id="mobileNav">
+            <div class="wrapper">
+                <nav class="main-nav mobile-nav">
+                    <ul>
+                        <li class="gallery-collection active-link">
+                            <a href="#">Atlanta</a>
+                        </li>
+                        <li class="gallery-collection">
+                            <a href="#">Georgia</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="headerWrapper">
+    <header id="header">
+        <div id="topNavMobile">
+            <nav id="mobileMenuLink" class="main-nav-clear">
+                <ul>
+                    <li class="active-link">
+                        <a>Menu</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="logo" data-content-field="site title">
+            <a href="index.html"><img id="bmob" src="images/birdiemob_nav.png"></a>
+        </div>
+        <script>
+
+            Y.use('squarespace-ui-base', function (Y) {
+                Y.one("h1.logo").plug(Y.Squarespace.TextShrink);
+            });
+        </script>
+        <div id="topNav" data-content-field="navigation">
+            <nav id="mainNavigation" class="main-nav-dropdown-click desktop-nav">
+                <ul>
+                    <li class="gallery-collection active-link">
+                        <a href="#">Atlanta</a>
+                    </li>
+                    <li class="gallery-collection">
+                        <a href="#">Georgia</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="sqs-layout sqs-grid-1 columns-1 empty" data-layout-label="Header Content" data-type="block-field"
+             id="headerBlocks">
+            <div class="row-sqs-row">
+                <div class="col sqs-col-1 span-1"></div>
+            </div>
+        </div>
+    </header>
+</div>
+<div id="pageWrapper" class="hfeed" role="main">
+
+</div>
+<!--<nav class="main-nav">
+    <a href="index.html"><img class="logo" src="images/birdiemob_nav.png"></a>
+
+    <a href="#clients">Clients</a>
+    <a href="#contact">Contact</a>
+</nav>
+<!--<header class="clearfix">
+    <button type="button" id="toggleMenu" class="toggle_menu"></button>
+    <a href="index.html"><img id="bmob" src="images/birdiemob_nav.png"></a>
+</header>
+<nav class="vertical_nav">
+    <ul id="js-menu" class="menu">
+        <li class="menu--item">
+            <label class="menu--link" title="Item 1">
+                <i class="menu--icon"></i>
+                <span class="menu--label">Atlanta</span>
+            </label>
+        </li>
+        <li class="menu--item">
+            <a href="#" class="menu--link" title="Item 2">
+                <i class="menu--icon"></i>
+                <span class="menu--label">Georgia</span>
+            </a>
+        </li>
+        <li class="menu--item">
+            <a href="#" class="menu--link" title="Item 3">
+                <i class="menu--icon"></i>
+                <span class="menu--label">Item 3</span>
+            </a>
+        </li>
+        <li class="menu--item">
+            <label class="menu--link" title="Item 4">
+                <i class="menu--icon"></i>
+                <span class="menu--label">Item 4</span>
+            </label>
+        </li>
+        <li class="menu--item">
+            <a href="#" class="menu--link" title="Item 5">
+                <i class="menu--icon"></i>
+                <span class="menu--label">Item 5</span>
+            </a>
+        </li>
+    </ul>
+
+    <button id="collapse_menu" class="collapse_menu">
+        <i class="collapse_menu--icon"></i>
+        <span class="collapse_menu--label">Recolher menu</span>
+    </button>
+
+</nav>-->
+
+<!--<div class="sidenav" id="mySidenav">
     <a href="index.html"><img id="bmob" src="images/birdiemob_nav.png"></a>
     <a href="#about">Atlanta</a>
     <a href="#services">Georgia</a>
     <!--<a href="#clients">Clients</a>
-    <a href="#contact">Contact</a>-->
+    <a href="#contact">Contact</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-
-<div class="main">
-    <h2>Auto Sidebar</h2>
-    <p>This sidebar is as tall as its content (the links), and is always shown.</p>
-    <p>Scroll down the page to see the result.</p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+</div>-->
+<!--<div class="wrapper">
+    <div class="main">
+        <h2>Auto Sidebar</h2>
+        <p>This sidebar is as tall as its content (the links), and is always shown.</p>
+        <p>Scroll down the page to see the result.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
         et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
         repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+        et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+         repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
         et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
         repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
         et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
         repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
-        et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-</div>
+    </div>
+</div>-->
 </body>
 </html>
