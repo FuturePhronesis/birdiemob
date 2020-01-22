@@ -1,0 +1,183 @@
+/* Page Styling */
+.div-top {
+    padding: 25px;
+}
+
+.textpad {
+    padding: 25px;
+}
+
+.essay-img {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    height: auto;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.essay-img:hover {
+    opacity: 0.5;
+    color: #EDE2C1;
+}
+
+.dropcap {
+    float: left;
+    /* width: 0.7em; */
+    font-size: 300%;
+    font-family: "Source Code Pro";
+    line-height: 80%;
+    font-weight: bold;
+}
+
+.dropcapword {
+    width: 0.7em;
+    font-size: 150%;
+    font-family: "Source Code Pro";
+    line-height: 80%;
+    font-weight: bold;
+}
+
+.dropcap-intext {
+    float: left;
+    /* width: 0.7em; */
+    font-size: 175%;
+    font-family: "Source Code Pro";
+    line-height: 80%;
+    font-weight: bold;
+}
+
+.dropcap-intext-word {
+    width: 0.7em;
+    font-size: 125%;
+    font-family: "Source Code Pro";
+    line-height: 80%;
+    font-weight: bold;
+}
+
+.indent {
+    text-indent: 50px;
+}
+
+/* ---- VIDEO ---- */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 45%;
+}
+
+/* ---ESSAY TABLE STYLING----*/
+
+#left-box {
+    width: 235px;
+    float: left;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+#middle-box {
+    width: 235px; /* Account for margins + border values */
+    padding: 5px 15px;
+    margin: 0px 5px 5px 5px;
+    display: inline-block;
+}
+
+#right-box {
+    width: 235px;
+    padding: 5px 15px;
+    display: inline-block;
+    float: right;
+}
+
+.lp-box {
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+.article-box {
+    border: .5px #999;
+    border-style: solid;
+    border-radius: 4px;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+.article-box-inv {
+    border: .5px #999;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+.image-box {
+    margin: 3px;
+    float: left;
+}
+
+@media all and (min-width: 768px) {
+    /* .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;} */
+    .article-box {
+        -webkit-flex: 5 0px;
+        flex: 5 0px;
+        -webkit-order: 2;
+        order: 2;
+    }
+
+    /* footer {-webkit-order:3;order:3;} */
+}
+
+a:link {
+    color: #000000;
+    text-decoration: none;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+a:visited {
+    color: #000000;
+    text-decoration: none;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+/*a:hover {
+    color: #EDE2C1;
+    text-decoration: none;
+    font-family: "Montserrat Alternates", sans-serif;
+}*/
+
+/*img:hover {
+    opacity: 0.5;
+    color: #EDE2C1;
+}*/
+
