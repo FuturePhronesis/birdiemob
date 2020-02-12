@@ -2,13 +2,14 @@ html {
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 18px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
     height: 100%;
     width: 100%;
-    background-color: #EDE2C1;
+    background-color: #A19060;
 }
 
 a {
@@ -135,6 +136,11 @@ h1 {
     margin-top: 0;
 }
 
+h2 {
+    color: #800009;
+    font-size: 2.77778rem;
+}
+
 h3 {
     font-size: 18px;
 }
@@ -167,6 +173,7 @@ h4#left {
 
 p {
     display: block;
+    text-align: center;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
@@ -201,7 +208,7 @@ p {
 }
 
 /* --- CONTENT BOXES RE: NAV --- */
-.home-box {
+/*.home-box {
     background: #A19060;
     min-height: 300px;
     padding: 1rem;
@@ -288,7 +295,7 @@ p {
     opacity: 0;
 }*/
 
-.home-box-content {
+/*.home-box-content {
     position: relative;
     min-height: 1px;
     padding-right: 10px;
@@ -317,9 +324,12 @@ p {
 .home-box-pad {
     padding: 5px;
 }
+*/
 
 /* ---BUTTONS--- */
+/*
 [class|="button"] {
+
     display: block;
     vertical-align: middle;
     margin: 1rem auto 0;
@@ -327,7 +337,7 @@ p {
     padding: 1em .5em;
     -webkit-appearance: none;
     border-radius: 4px;
-    /*transition: background-color .25s ease-out, color .25s ease-out;*/
+    transition: background-color .25s ease-out, color .25s ease-out;
     font-size: .9rem;
     line-height: 1;
     text-align: center;
@@ -373,12 +383,13 @@ p {
     background-color: #fa55b4;
     color: #000000;
 }
+*/
 
 /* --- DROPCAP ---*/
-.dropcap {
+.dropcap_mob {
     float: left;
     /* width: 0.7em; */
-    font-size: 300%;
+    font-size: 150%;
     line-height: 80%;
     font-weight: bold;
 }
@@ -452,10 +463,23 @@ p {
     float: right;
 }
 
+.rights {
+    float: left;
+}
+
+#footer-content-rights {
+    font-size: 12px;
+}
+
+#backtop {
+    color: #800009;
+}
+
 .footer-content-insta,
 .footer-content-youtube,
 .footer-content-email,
-.footer-content-twitter {
+.footer-content-twitter,
+.footer-content-rights {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;

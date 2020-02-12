@@ -19,14 +19,25 @@
     text-align: center;
 }
 
+.bottom_list
+{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 30px;
+    font: 70px "Montserrat Alternates", sans-serif;
+    color: #800009;
+    text-align: left;
+    display: inline-block;
+}
+
 .sticky_birds_headline
 {
     top: 30px;
-    font: 50px "Montserrat Alternates", sans-serif;
+    font: 35px "Montserrat Alternates", sans-serif;
     font-weight: bold;
     color: #800009;
     text-align: center;
-    padding: 25px 0px 10px 0px
+    padding: 30px 0px 10px 0px
 }
 
 .sticky_birds_subhead
@@ -76,58 +87,114 @@
     background-image: url("../images/background/vulture01.jpg");
 }
 
+.block-4,
+#block-4a,
+#block-4b,
+.block-5,
+#block-5a,
+#block-5b,
+.block-6,
+#block-6a,
+#block-6b,
+.block-7,
+#block-7a,
+#block-7b,
+.block-8,
+#block-8a,
+#block-8b
+{
+    height: 470px;
+}
+
+#block-4a,
+#block-4b,
+#block-5a,
+#block-5b,
+#block-6a,
+#block-6b,
+#block-7a,
+#block-7b,
+#block-8a,
+#block-8b
+{
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: center;
+}
+
 .block-4
 {
-    height: 500px;
-    /*padding: 70px 20px;*/
     box-sizing: border-box;
     background-position: center;
 }
 
 #block-4a
 {
-    height: 500px;
-    /*padding: 30px 5px;*/
-    background-size: cover;
-    background-image: url("../images/accipitridae/baldeagle_01.jpg");
-    box-sizing: border-box;
-    background-position: center;
+    background-image: url("../images/hawks/baldeagle_01.jpg");
 }
 
 #block-4b {
-    height: 500px;
-    /*padding: 30px 5px;*/
-    background-size: cover;
-    background-image: url("../images/mimidae/mock_02.jpg");
-    box-sizing: border-box;thrasher_02
-background-position: center;
+    background-image: url("../images/mimids/mock_02.jpg");
 }
 
 .block-5
 {
-    height: 500px;
-    /*padding: 70px 20px;*/
     box-sizing: border-box;
     background-position: center;
 }
 
 #block-5a
 {
-    height: 500px;
-    /*padding: 30px 5px;*/
-    background-size: cover;
-    background-image: url("../images/picidae/flicker_08.jpg");
+    background-image: url("../images/woodpecker/flicker_08.jpg");
+}
+
+#block-5b {
+    background-image: url("../images/thrushes/robin_10.jpg");
+}
+
+.block-6
+{
     box-sizing: border-box;
     background-position: center;
 }
 
-#block-5b {
-    height: 500px;
-    /*padding: 30px 5px;*/
-    background-size: cover;
-    background-image: url("../images/turdidae/robin_10.jpg");
+#block-6a
+{
+    background-image: url("../images/chickhatch/tuftit02.jpg");
+}
+
+#block-6b {
+    background-image: url("../images/wading/triheron_02.jpg");
+}
+
+.block-7
+{
     box-sizing: border-box;
     background-position: center;
+}
+
+#block-7a
+{
+    background-image: url("../images/warblers/pine07.jpg");
+}
+
+#block-7b {
+    background-image: url("../images/wrens/carwren01.jpg");
+}
+
+.block-8
+{
+    box-sizing: border-box;
+    background-position: center;
+}
+
+#block-8a
+{
+    background-image: url("../images/waxwings/cwaxwing08.jpg");
+}
+
+#block-8b {
+    background-image: url("../images/pelicans/bpelican04.jpg");
 }
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
